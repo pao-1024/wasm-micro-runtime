@@ -6,6 +6,8 @@
 #include "platform_api_extension.h"
 #include "libc_errno.h"
 #include <unistd.h>
+#include <sys/stat.h>
+int renameat(int olddirfd, const char *oldpath, int newdirfd, const char *newpath);
 
 #if !defined(__APPLE__) && !defined(ESP_PLATFORM)
 #define CONFIG_HAS_PWRITEV 1

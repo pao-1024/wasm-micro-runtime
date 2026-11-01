@@ -4,6 +4,8 @@
  */
 
 #include "sdkconfig.h"
+#include <sys/stat.h>
+#include <stdio.h>
 #include "platform_api_vmcore.h"
 #include "platform_api_extension.h"
 
